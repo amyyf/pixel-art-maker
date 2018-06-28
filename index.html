@@ -12,28 +12,34 @@
 </head>
 <body>
     <h1>Cross-Stitch Pixel Art Maker</h1>
-    <p><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i></p>
-    <p class="text">Choose the size of your fabric (no bigger than 40x40, or click 'Submit' for a pre-set size), choose your colors, and click around to create a work of art!</p>
-  <p class="text">Change the fabric color at any time.</p>
-  <p class="text">To change the color of a stitch, just choose a new thread color and click on the stitch. Click a second time to remove a stitch.</p>
-    <p><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i></p>
-    <h2>Fabric Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" max="40" value="15">
-        Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" max="40" value="15">
-        <input type="submit">
-    </form>
-    <section class="colors">
-        <h2 class="colorsChild">Choose Fabric Color</h2>
-        <input type="color" value="#ffffff" id="fabricColor">
-
-        <h2 class="colorsChild">Choose Thread Color</h2>
-        <input type="color" id="colorPicker">
+    <div class="decoration"><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i></div>
+    <section>
+      <h2>Design a <span class="strikethrough">Hand-Stitched</span> Digital Masterpiece</h2>
+      <p class="text">Choose the size of your fabric (no bigger than 40x40), choose your colors, and click around to create a work of art!</p>
+      <p class="text">Change the fabric color at any time.</p>
+      <p class="text">To change the color of a stitch, just choose a new thread color and click on the stitch. Click a second time to remove a stitch.</p>
     </section>
-    <h2>Project</h2>
-  <div class="border"><table id="pixelCanvas"></table></div>
+    <div class="decoration"><i class='fas fa-times'></i><i class='fas fa-times'></i><i class='fas fa-times'></i></div>
+    <section>
+      <h2>Customize Your Project</h2>
+      <form id="sizePicker">
+          <label for="inputHeight">Fabric Height:</label>
+          <input type="number" id="inputHeight" name="height" min="1" max="40" value="15">
+          <label for="inputWidth">Fabric Width:</label>
+          <input type="number" id="inputWeight" name="width" min="1" max="40" value="15">
+          <input type="submit">
+      </form>
+      <section class="colors">
+          <label for="fabricColor" class="colorsChild">Fabric Color</label>
+          <input type="color" value="#ffffff" id="fabricColor">
+          <label for="colorPicker" class="colorsChild">Thread Color</label>
+          <input type="color" id="colorPicker">
+      </section>
+    </section>
+    <section>
+      <h2>Project</h2>
+      <div class="border"><table id="pixelCanvas"></table></div>
+    </section>
   <script src="js/jquery.js"></script>
 
 </body>
